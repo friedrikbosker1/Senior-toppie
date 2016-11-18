@@ -16,7 +16,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith('!help'):
-        await client.send_message(message.channel, 'Commandos: !help, !sleep, !meesterwerk, cibrin, job, wisse, friedrik, arne, levi, liam, jehannes, jordy, XD')
+        await client.send_message(message.channel, 'Commandos: !help, !welterusten, !meesterwerk, cibrin, job, wisse, friedrik, arne, levi, liam, jehannes, jordy, XD')
 
     elif message.content.startswith('!welterusten'):
         await asyncio.sleep(5)
@@ -42,7 +42,11 @@ async def on_message(message):
     elif message.content.startswith('jordy'):
         await client.send_message(message.channel, 'Geen toelichting nodig')
     elif message.content.startswith('XD'):
-        await client.send_message(message.channel, 'Nice meme!')
+        await client.send_message(message.channel, 'Nice meme!', tts=True)
+    elif message.content.startswith('is goed'):
+        await client.send_message(message.channel, 'Ik vind helemaal mooi', tts=True)
+    elif message.content.startswith('konjo'):
+        await client.send_message(message.channel, 'Wollah g', tts=True)
     elif message.content.startswith(''):
         await client.add_reaction(message,discord.utils.get(client.get_all_emojis(), name = 'seniortoppie'))
 
