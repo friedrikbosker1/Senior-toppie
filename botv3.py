@@ -47,6 +47,8 @@ async def on_message(message):
         await client.send_message(message.channel, 'Ik vind helemaal mooi', tts=True)
     elif message.content.startswith('konjo'):
         await client.send_message(message.channel, 'Wollah g', tts=True)
+    elif message.content.startswith('pimmel'):
+        await client.send_message(message.channel, 'Pimmel pammel pommel pam, kijk eens wat mijn pimmel kan', tts=True)
     elif message.content.startswith(''):
         await client.add_reaction(message,discord.utils.get(client.get_all_emojis(), name = 'seniortoppie'))
 
